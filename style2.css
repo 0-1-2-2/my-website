@@ -1,0 +1,37 @@
+/* 全体の初期設定 */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #c3ecb2, #7ee8fa);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* iframeスタイル */
+  iframe {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+  
+  /* マウスホバー時に少し拡大 */
+  iframe:hover {
+    transform: scale(1.01);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* ページ全体フェードイン */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
