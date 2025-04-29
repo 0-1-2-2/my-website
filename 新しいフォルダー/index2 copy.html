@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>授業一覧</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <iframe src="https://playingcards.jp/" allowfullscreen></iframe>
+
+  <script>
+    // キーボードが押されたときのイベント
+    window.addEventListener('keydown', function(event) {
+      // 例えば「スペースキー」が押されたら
+      if (event.code === 'Backspace') {
+        // 別のページにジャンプ
+        window.location.href = 'https://google.com';
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+
